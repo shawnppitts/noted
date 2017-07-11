@@ -1,24 +1,8 @@
-# README
+#Noted
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    Online note taking application
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    * Developer: Shawn Pitts
+    * Languages: Ruby, HTML5, SCSS + CSS3
+    * Framework: Ruby on Rails v 5.1.2
+    * Database: SQL-Lite3

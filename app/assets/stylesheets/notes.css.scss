@@ -1,12 +1,11 @@
 #notes {
 	.note {
-		background: $dark_gray;
-		width: 30%;
+		background: grey;
+		width: 25%;
 		min-height: 150px;
 		margin: 1rem 1%;
 		padding: 1.5rem 2.5%;
 		float: left;
-		border-radius: .4rem;
 		position: relative;
 		color: white;
 		.title {
@@ -19,7 +18,7 @@
 			position: absolute;
 			bottom: .25rem;
 			left: 8.5%;
-			color: $green;
+			color: white;
 			font-size: .85rem;
 		}
 	}

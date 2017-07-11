@@ -1,11 +1,10 @@
 #banner {
 	background-image: url(image_path(""));
-	background: black;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 100%;
-	min-height: 500px;
+	min-height: 630px;
 	display: table;
 	.banner_content {
 		display: table-cell;
@@ -13,18 +12,15 @@
 		text-align: center;
 		h1 {
 			@include bold_font;
-			color: white;
 			font-size: 3.5rem;
 			margin: 0;
-			letter-spacing: 5px;
 		}
 		p {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
 			margin: 0 0 2.5rem 0;
-			color: white;
-			font-family: "Abel";
-			font-weight: 100;
-			letter-spacing: 2px;
+		}
+		.welcome-button{
+
 		}
 	}
 }

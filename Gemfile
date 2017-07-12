@@ -19,7 +19,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
-  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -28,8 +27,8 @@ group :development, :test do
 end
 
 group :production do
-     gem 'pg'
-     gem 'rails_12factor'
+    gem 'pg', '~> 0.21.0'
+    gem 'rails_12factor'
 end
 
 group :development do

@@ -1,5 +1,9 @@
-<%= simple_form_for @note do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content %>
-  <%= f.button :submit, class: "button" %>
-<% end %>
+<div class="new-note-body"
+    <%= simple_form_for @note do |f| %>
+      <%= f.text_field :title, class: "forum", placeholder: "Title" %>
+        <br><br>
+      <%= f.text_area :content, class: "forum", id: "content-field", placeholder: "Body" %>
+        <br><br><br>
+      <%= f.button :submit, class: "ghost-button" %>
+    <% end %>
+</div>

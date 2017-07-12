@@ -1,26 +1,43 @@
+.index-body{
+	background: url("nature.jpg")fixed no-repeat center;
+	height: 100%;
+	margin:0%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
 #banner {
-	background-image: url(image_path(""));
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
+	padding-top: 125px;
+	text-align: center;
 	width: 100%;
-	min-height: 630px;
-	display: table;
 	.banner_content {
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
 		h1 {
-			@include bold_font;
-			font-size: 3.5rem;
+			font-family: "Reenie Beanie";
+			font-size: 6rem;
 			margin: 0;
+			color: white;
 		}
 		p {
-			font-size: 1.5rem;
+			font-size: 1.75rem;
 			margin: 0 0 2.5rem 0;
-		}
-		.welcome-button{
-
+			color: $light_gray;
+			letter-spacing: 3px;
+			font-family: "Dosis";
 		}
 	}
+}
+
+footer{
+	padding-top: 100px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	font-family: "Reenie Beanie";
+	background-color: none;
+	color: $light_gray;
+	text-align: center;
 }

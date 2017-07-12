@@ -4,22 +4,23 @@
   <title>Noted | Dont forget ideas</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <div class="header_inner">
-      <%= link_to "noted", root_path, id: "logo" %>
-      <nav>
+
+    <nav class="navbar">
+      <%= link_to "Noted", root_path, id: "logo" %>
+      <ul>
         <% if user_signed_in? %>
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-          <%= link_to "New Note", new_note_path, class: "ghost" %>
+         <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "navitems"%></li>
+         <li><%= link_to "New Note", new_note_path, class: "navitems" %></li>
         <% else %>
-          <%= link_to "Login", new_user_session_path %>
+          <li><%= link_to "Login", new_user_session_path, class: "navitems"%></li>
         <% end %>
-      </nav>
-    </div>
-  </header>
+     </ul>
+    </nav>
+
   <p class="alert">
     <%= alert %>
   </p>

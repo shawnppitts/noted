@@ -2,8 +2,160 @@ $dark_gray: #2B2E2E;
 $light_gray: #C0C1C1;
 $green: #33CD99;
 
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 @mixin bold_font {
 	font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+
+body{
+	margin: 0;
+	width: 100%;
+}
+
+.wrapper-with-padding{
+	text-align: center;
+}
+
+.navbar{
+	width: 100%;
+	position: relative;
+	background: $dark_gray;
+	height: 90px;
+	border-bottom: 5px solid $green;
+}
+
+.navbar #logo{
+	margin-left: 2%;
+	float: left;
+	height: 50px;
+	padding: 20px 30px;
+	line-height: 50px;
+	font-family: "Reenie Beanie";
+	font-size: 48px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: white;
+}
+
+.navbar > ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style-type: none;
+}
+
+.navbar > ul > li {
+	float: right;
+}
+
+.navitems{
+	display: inline-block;
+	padding: 20px 30px;
+	line-height: 50px;
+	height: 50px;
+	text-decoration: none;
+	font-family: "Dosis";
+	font-size: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+// global var
+
+button{
+	outline: none;
+	padding: 25px;
+	width: 200px;
+	background: $green;
+	border: 1px solid $green;
+	border-radius: 50px;
+	a{
+		color: white;
+		font-size: 18px;
+		text-decoration: none;
+		font-family: "Dosis";
+		letter-spacing: 2px;
+	}
+}
+
+// signup form
+
+.signup{
+	text-align: center;
+}
+
+#sign-up{
+	font-family: "Reenie Beanie";
+	text-align: center;
+	font-size: 60px;
+}
+
+.field{
+	text-align: center;
+	.fields{
+		font-family: "Dosis";
+		outline: none;
+		padding: 15px;
+		width: 300px;
+		font-size: 18px;
+	}
+}
+
+.ghost-button{
+	outline: none;
+	padding: 25px;
+	width: 200px;
+	background: $green;
+	border: 1px solid $green;
+	border-radius: 50px;
+	color: white;
+}
+
+// login
+
+#login{
+	font-size: 60px;
+	font-family: "Reenie Beanie";
+}
+
+.login-wrapper{
+	text-align: center;
+}
+
+.links{
+	padding-top: 20px;
+}
+
+.login-links{
+	text-decoration: none;
+}
+
+// newnote
+
+#content-field{
+	height: 200px;
+}
+.add{
+	padding-top: 50px;
+	text-align: center;
+	font-family: "Reenie Beanie";
+	font-size: 60px;
+}
+
+.new-note-body{
+	text-align: center;
+}
+
+.forum{
+	font-family: "Dosis";
+	outline: none;
+	padding: 15px;
+	width: 300px;
+	font-size: 18px;
 }
